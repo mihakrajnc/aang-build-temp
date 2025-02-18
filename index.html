@@ -25,13 +25,13 @@
   </head>
   <body>
     <canvas id="unity-canvas" tabindex="-1"></canvas>
-    <script src="Build/AangRenderer.loader.js"></script>
+    <script src="Build/AangRenderer_LTO.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/AangRenderer.data.br",
-        frameworkUrl: "Build/AangRenderer.framework.js.br",
-        codeUrl: "Build/AangRenderer.wasm.br",
+        dataUrl: "Build/AangRenderer_LTO.data.br",
+        frameworkUrl: "Build/AangRenderer_LTO.framework.js.br",
+        codeUrl: "Build/AangRenderer_LTO.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Decentraland",
         productName: "AangRenderer",
