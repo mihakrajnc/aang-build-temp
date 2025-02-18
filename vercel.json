@@ -19,5 +19,11 @@
                         }
                     ]
                 }
-            ]
+            ],
+              "routes": [
+    {
+      "src": "/(.*)\\.br$",
+      "headers": { "Content-Encoding": "br" }
+    }
+  ]
         }
