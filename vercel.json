@@ -1,29 +1,13 @@
-
-        {
-            "headers": [
-                {
-                    "source": "/(.*)\\.br",
-                    "headers": [
-                        {
-                            "key": "Content-Encoding",
-                            "value": "br"
-                        }
-                    ]
-                },
-                {
-                "source": "/(.*)\\.wasm\\.br",
-                    "headers": [
-                        {
-                            "key": "Content-Type",
-                            "value": "application/wasm"
-                        }
-                    ]
-                }
-            ],
-              "routes": [
+{
+  "version": 2,
+  "routes": [
     {
       "src": "/(.*)\\.br$",
-      "headers": { "Content-Encoding": "br" }
+      "headers": { "Content-Encoding": "br", "Content-Type": "application/javascript" }
+    },
+    {
+      "src": "/(.*)\\.gz$",
+      "headers": { "Content-Encoding": "gzip", "Content-Type": "application/javascript" }
     }
   ]
-        }
+}
